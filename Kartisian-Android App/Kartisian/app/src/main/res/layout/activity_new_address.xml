@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.sjsu.cmpe.kartisian.newAddress"
+    android:background="#2e0e4b">
+
+    <TextView
+        android:text="Enter Favorite Location by address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="#bba3d0"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Street Address: "
+        android:layout_marginTop="100dp"
+        android:id="@+id/streettext"
+        android:textColor="#bba3d0"
+        android:textSize="15dp"
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/streetvalue"
+        android:background="#7647a2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text = "City: "
+        android:layout_marginTop="170dp"
+        android:id="@+id/citytext"
+        android:layout_height="wrap_content"
+        android:textColor="#bba3d0"
+        android:textSize="15dp"
+        />
+    
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="170dp"
+        android:id="@+id/cityvalue"
+        android:background="#7647a2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zip Code: "
+        android:layout_marginTop="240dp"
+        android:id="@+id/ziptext"
+        android:textColor="#bba3d0"
+        android:textSize="15dp"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/zipvalue"
+        android:background="#7647a2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of Location: "
+        android:id="@+id/locnametext"
+        android:layout_below="@+id/zipvalue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp"
+        android:textSize="15dp"
+        android:textColor="#bba3d0"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:id="@+id/locnamevalue"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="130dp"
+        android:background="#7647a2"
+         />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/button"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="50dp"
+        android:onClick="onSaveAddress"
+        android:background="@drawable/mybutton"
+        android:textColor="#bba3d0"
+        android:padding="10dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/Add_Cancel"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/mybutton"
+        android:textColor="#bba3d0"
+        android:padding="10dp"
+         />
+
+</RelativeLayout>
